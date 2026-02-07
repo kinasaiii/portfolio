@@ -1,0 +1,7 @@
+. change the width of the inputs in the contact section  (doneee)
+. reduce the padding left of the logo and the padding right of the homeburger icon
+. fix the space betwwen the 2 sections of the skills (the gap)
+. change the design of the home page for phones
+. reduce the size of the picture (doneee)
+. center the text of the home area in phone
+. add little descriptive divs for each skill
