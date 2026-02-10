@@ -15,11 +15,11 @@
             <button id = "lang-btn">FR</button>
         </div>
         <ul id = "nav-links">
-            <li><a href = "#home" id = "home-nav">HOME</a></li>
-            <li><a href = "#about" id = "about-nav">ABOUT</a></li>
-            <li><a href = "#skill" id = "skill-nav">SKILLS</a></li>
-            <li><a href = "#project" id = "project-nav">PROJECTS</a></li>
-            <li><a href = "#contact" id = "contact-nav">CONTACT</a></li>
+            <li><a href = "#home" id = "home-nav" class = "clickable">HOME</a></li>
+            <li><a href = "#about" id = "about-nav" class = "clickable">ABOUT</a></li>
+            <li><a href = "#skill" id = "skill-nav" class = "clickable">SKILLS</a></li>
+            <li><a href = "#project" id = "project-nav" class = "clickable">PROJECTS</a></li>
+            <li><a href = "#contact" id = "contact-nav" class = "clickable">CONTACT</a></li>
         </ul>
         <div class = "icon" id = "menu-toggle">
             <svg viewBox = "0 0 400 400">
@@ -29,17 +29,19 @@
     </header>
 
     <!--THE FIRST INTERFACE OF THE WEB THE HOME SECTION -->
-    <section id = "home">        
-        <div id = "text-left">
-            <p class = "home-p" id = "hello">Hello !</p>
-            <p class = "home-p" id = "home-name">I'm <span id = "namespan">Iness AINSERI</span></p>
-            <p class = "home-p" id = "home-desc">a passionate <em>Software Developer</em><br>and an <em>Entrepreneur</em></p>
-            <a href = "cv-iness-ainseri-en.pdf" target = "_blank"><button class = "zoom" id = "btn-cv">View my CV</button></a>
-        </div>
-        <!-- i did those to divs so i can display them next to each other -->
-        <div id = "image-right">
-            <img class = "zoom" id = "my-img" src = "my-imagespc.png" alt = "my image">
-        </div>
+    <section id = "home">  
+        <div class = "home-container">
+            <div id = "image-right">
+                <img class = "zoom" id = "my-img" src = "my-imagespc.png" alt = "my image">
+            </div>
+            <div id = "text-left">
+                <p class = "home-p" id = "hello">Hello !</p>
+                <p class = "home-p" id = "home-name">I'm <span id = "namespan">Iness AINSERI</span></p>
+                <p class = "home-p" id = "home-desc">a passionate <em>Software Developer</em><br>and an <em>Entrepreneur</em></p>
+                <a href = "cv-iness-ainseri-en.pdf" target = "_blank"><button class = "clickable" class = "zoom" id = "btn-cv">View my CV</button></a>
+            </div>
+            <!-- i did those to divs so i can display them next to each other -->
+        </div> 
     </section>  
     <hr class = "section-divider">
 
@@ -141,42 +143,42 @@
             <div class = "project-item">
                 <h5 id = "jeu-mot">Word Game with C</h5>
                 <p class = "project-description" id = "jeu-mot-desc">A word-generation game built in C, focused on algorithmics and problem-solving. Players create words from random letters, validated using a dictionary to earn points.</p>
-                <a href = "https://drive.google.com/drive/folders/1RCYdd9YfMaFNec_NnfYJoBYKICEZmrn5?usp=sharing" class = "project-link" target = "_blank">See More</a>
+                <a href = "https://drive.google.com/drive/folders/1RCYdd9YfMaFNec_NnfYJoBYKICEZmrn5?usp=sharing" class = "clickable project-link" target = "_blank">See More</a>
             </div>
             <div class = "project-item">
                 <h5 id = "social-links">Social Links</h5>
                 <p class = "project-description" id = "social-links-desc">A minimalist social links webpage featuring a profile card and interactive buttons, built using HTML and CSS.</p>
-                <a href = "https://kinasai-links.netlify.app/" class = "project-link" target = "_blank">See More</a>
+                <a href = "https://kinasai-links.netlify.app/"class = "clickable project-link" target = "_blank">See More</a>
             </div>
             <div class = "project-item">
                 <h5 id = "age-calc">Age Calculator</h5>
                 <p class = "project-description" id = "age-calc-desc">An age calculator website built with HTML, CSS and JavaScript.</p>
-                <a href = "#" class = "project-link" target = "_blank">See More</a>
+                <a href = "#" class = "clickable project-link" target = "_blank">See More</a>
             </div>
             <div class = "project-item">
                 <h5 id = "contact-us">Contact Kinasai</h5>
                 <p class = "project-description" id = "contact-us-desc">A contact website built with HTML, CSS and JavaScript.</p>
-                <a href = "#" class = "project-link" target = "_blank">See More</a>
+                <a href = "#"class = "clickable project-link" target = "_blank">See More</a>
             </div>
             <div class = "project-item">
                 <h5 id = "password-gen">Password Generator</h5>
                 <p class = "project-description" id = "password-gen-desc">A password generator website built with HTML, CSS and JavaScript.</p>
-                <a href = "#" class = "project-link" target = "_blank">See More</a>
+                <a href = "#"class = "clickable project-link" target = "_blank">See More</a>
             </div>
             <div class = "project-item">
                 <h5 id = "sudoku">Sudoku</h5>
                 <p class = "project-description" id = "sudoku-desc">A Sudoku game built with HTML, CSS and JavaScript.</p>
-                <a href = "#" class = "project-link" target = "_blank">See More</a>
+                <a href = "#"class = "clickable project-link" target = "_blank">See More</a>
             </div>
             <div class = "project-item">
                 <h5 id = "calculator">Cute Calculator</h5>
                 <p class = "project-description" id = "calculator-desc">A password generator website built with HTML, CSS and JavaScript.</p>
-                <a href = "#" class = "project-link" target = "_blank">See More</a>
+                <a href = "#"class = "clickable project-link" target = "_blank">See More</a>
             </div>
             <div class = "project-item">
                 <h5 id = "password-gen">Pommodoro</h5>
                 <p class = "project-description" id = "password-gen-desc">A password generator website built with HTML, CSS and JavaScript.</p>
-                <a href = "#" class = "project-link" target = "_blank">See More</a>
+                <a href = "#"class = "clickable project-link" target = "_blank">See More</a>
             </div>
         </div>
     </section>
@@ -210,7 +212,7 @@
         <form id = "contact-form">
             <input class = "input" type = "email" id = "email-placeholder" placeholder = "Your Email" required>
             <textarea class = "input" id = "message-placeholder" name = "message" placeholder = "Your Message"></textarea>
-            <button class = "zoom" id = "btn-send" type = "submit">Send</button>
+            <button class = "clickable" class = "zoom" id = "btn-send" type = "submit">Send</button>
         </form>
         <p id = "thanks-message">Thanks for Your message :)</p>
     </section>
