@@ -123,7 +123,7 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::se
   color: #e48fb1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #nav-links {
     position: absolute;
     top: 70px;
