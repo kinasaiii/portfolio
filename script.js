@@ -38,8 +38,6 @@ const frenchText = {
     "password-gen": "Password Generator",
     "password-gen-desc": "A password generator website built with HTML, CSS and JavaScript.",
     "contact-me-title": "Contacte Moi!",
-    //"email-placeholder": "Votre Adresse E-mail",
-    //"message-placeholder": "Votre Message",
     "btn-send": "Envoyer",
     "thanks-message": "Merci pour Votre message :)",
     "footer-rights": "@ 2025 KINASAI. Tous Droits Réservés.",
