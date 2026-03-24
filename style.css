@@ -31,10 +31,8 @@ body {
 }
 
 .icon {
-  position: relative;
-  z-index: 10;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,8 +42,7 @@ body {
 .icon svg {
     width: 100%;
     height: 100%;
-    transition: transform 0.12s ease, opacity 0.12s ease;
-    pointer-events: none;
+    transition: transform 0.3s ease;
     color: var(--accent);
 }
 
@@ -68,7 +65,7 @@ body {
 
 hr {
   border: 1px solid var(--border);
-  margin: 50px 0;
+  margin: 60px 0;
 }
 
 .section-title {
@@ -80,41 +77,40 @@ hr {
   text-decoration: underline var(--accent) 3px solid;
 }
 
-button {
+.button {
   background-color: var(--accent);
   color: var(--bg-main);
-  border: 2px solid transparent;
-  border-radius: 5px;
+  border: 2px solid var(--accent);
+  border-radius: 7px;
   cursor: pointer;
   font-size: 16px;
   padding: 10px 15px;
   margin: 10px 0;
-  box-shadow: 0 0 0 transparent;
+  text-decoration: none;
   transition: 
-    transform 0.6s ease,
-    /*filter 0.6s ease,*/
-    box-shadow 0.6s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
     background-color 0.4s ease,
     color 0.4s ease,
     border-color 0.4s ease;
 }
 
-button:hover {
+.button:hover {
   background-color: var(--bg-main);
   color: var(--accent-hover);
   border-color: var(--accent-hover);
-  box-shadow: 0px 0px 20px var(--accent-hover);
+  box-shadow: 0px 3px 15px var(--accent-hover);
 }
 
 .zoom {
-  transition: transform 0.4s ease;
+  transition: transform 1s ease;
 }
 
 .zoom:hover {
   transform: scale(1.05);
 }
 
-p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
+a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
   background-color: var(--accent);
   color: var(--bg-main);
 }
@@ -490,7 +486,29 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::se
 }
 
 #btn-send {
-  padding: 10px 20px;
+  background-color: var(--accent);
+  color: var(--bg-main);
+  border: 2px solid var(--accent);
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 5px 0;
+  padding: 10px 30px;
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease;
+}
+
+#btn-send:hover {
+  transform: scale(1.05);
+  background-color: var(--bg-main);
+  color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  box-shadow: 0px 3px 15px var(--accent-hover);
 }
 
 .input:focus {
