@@ -388,12 +388,12 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
   background-color: var(--bg-card);
   border: 2px solid var(--border);
   width: 300px;
-  height: 300px;
+  height: 350px;
   margin: 10px;
   padding: 30px;
   border-radius: 15px;
   text-align: left;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .project-item:hover {
@@ -403,7 +403,7 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
 .project-item h5 {
   font-style: italic;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 20px;
   color: #c6c6c6;
   margin-left: 10px;
@@ -413,18 +413,20 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
   margin-bottom: 20px;
   font-size: 16px;
   color: var(--text-muted);
-  opacity: 0.8;
+  opacity: 0.85;
   margin-left: 10px;
   line-height: 1.6;
 }
 
 .project-link {
-  display: inline-block;
+  /*display: inline-block;*/
+  font-weight: 600;
   font-size: 16px;
   color: var(--accent);
   text-decoration: none;
   margin-left: 10px;
   pointer-events: auto;
+  transition: all 0.4s ease;
 }
 
 .project-link, .project-link:visited {
@@ -436,6 +438,7 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
 .project-link:hover {
   color: var(--accent-hover);
   text-decoration: none;
+  transform: scale(1.05);
 }
 
 /* DONE */

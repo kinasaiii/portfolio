@@ -1,0 +1,10 @@
+parts 
+
+- all
+- nav
+- HOME
+- about --> DONE
+- skills
+- projects --> DONE
+- contact --> DONE
+- footer --> DONE
