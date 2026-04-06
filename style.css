@@ -113,12 +113,14 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 40px;
+  margin: 15px 20px 0 20px;
   height: 60px;
-  padding: 20px 30px;
+  padding: 0 30px;
   background-color: var(--bg-secondary);
   position: fixed;
   border: var(--border) 1px solid;
-  width: 100%;
+  width: calc(100% - 40px);
   box-shadow: 0 10px 10px #00000066;
   z-index: 1000;
 }
@@ -141,6 +143,12 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   list-style: none;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 #menu-toggle {
   display: none;
   cursor: pointer;
@@ -154,7 +162,7 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   transition: color 0.4s ease;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   #nav-links {
     position: absolute;
     top: 70px;
