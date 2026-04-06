@@ -38,8 +38,8 @@ body {
 }
 
 .icon svg {
-    transition: transform 0.3s ease;
-    color: var(--accent);
+  transition: transform 0.3s ease;
+  color: var(--accent);
 }
 
 .icon:hover svg {
@@ -80,12 +80,11 @@ hr {
   border-radius: 7px;
   cursor: pointer;
   font-size: 16px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   margin: 10px 0;
   text-decoration: none;
   transition: 
     transform 0.4s ease,
-    box-shadow 0.4s ease,
     background-color 0.4s ease,
     color 0.4s ease,
     border-color 0.4s ease;
@@ -95,22 +94,13 @@ hr {
   background-color: var(--bg-main);
   color: var(--accent-hover);
   border-color: var(--accent-hover);
-  box-shadow: 0px 3px 15px var(--accent-hover);
-}
-
-.zoom {
-  transition: transform 1s ease;
-}
-
-.zoom:hover {
   transform: scale(1.05);
 }
 
-a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
+a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
   background-color: var(--accent);
   color: var(--bg-main);
 }
-
 
 
 /* navigation bar styling */
@@ -155,6 +145,12 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
   font-weight: bold;
   font-size: 24px;
   color: var(--accent);
+  transition: transform 0.4s ease-in, letter-spacing 0.4s ease-in;
+}
+
+#refrech:hover {
+  transform: scale(1.05);
+  letter-spacing: 1px;
 }
 
 @media (max-width: 900px) {
@@ -362,12 +358,14 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
 }
 
 .project-item {
+  position: relative;
   background-color: var(--bg-card);
   border: 2px solid var(--border);
-  width: 300px;
-  height: 350px;
+  width: 290px;
+  height: 330px;
   margin: 10px;
   padding: 30px;
+  overflow: hidden;
   border-radius: 15px;
   text-align: left;
   transition: transform 0.3s ease;
@@ -375,6 +373,22 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
 
 .project-item:hover {
   transform: scale(1.05);
+}
+
+.project-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-left: 2px solid var(--accent-hover);
+  transform: scaleY(0);
+  transform-origin: top;
+  border-radius: inherit;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.project-item:hover::after {
+  transform: scaleY(1);
 }
 
 .project-item h5 {
@@ -425,6 +439,7 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
   padding: 10px;
   text-align: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 #email-placeholder, #message-placeholder {
@@ -435,6 +450,13 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
   border-radius: 5px;
   background-color: var(--bg-card);
   color: var(--text-main);
+  outline: none;
+  transition: border-color 0.5s ease
+}
+
+#email-placeholder:focus, #message-placeholder:focus {
+  outline: none;
+  border-color: var(--accent-hover);
 }
 
 #message-placeholder {
@@ -466,33 +488,10 @@ a::selection, ::selection, h1::selection, h2::selection, h3::selection, h4::sele
 }
 
 #btn-send {
-  background-color: var(--accent);
-  color: var(--bg-main);
-  border: 2px solid var(--accent);
-  border-radius: 7px;
   cursor: pointer;
   font-weight: 700;
   font-size: 14px;
   margin: 5px 0;
-  padding: 10px 30px;
-  transition: 
-    transform 0.4s ease,
-    box-shadow 0.4s ease,
-    background-color 0.4s ease,
-    color 0.4s ease,
-    border-color 0.4s ease;
-}
-
-#btn-send:hover {
-  transform: scale(1.05);
-  background-color: var(--bg-main);
-  color: var(--accent-hover);
-  border-color: var(--accent-hover);
-  box-shadow: 0px 3px 15px var(--accent-hover);
-}
-
-.input:focus {
-  outline: var(--accent-hover) 2px solid;
 }
 
 @media (max-width: 795px) {
@@ -509,9 +508,13 @@ footer {
   text-align: center;
   justify-content: center;
   padding: 15px;
-  margin: 50px 0 0 0;
-  font-size: 15px;
+  font-size: 12px;
   border: var(--border) 1px solid;
+}
+
+#footer-rights {
+  letter-spacing: 1.5px;
+  opacity: 50%;
 }
 
 
