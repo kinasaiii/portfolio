@@ -1,10 +1,17 @@
 parts 
-
 - all
-- nav
+- nav 
 - HOME
 - about --> DONE
 - skills
 - projects --> DONE
 - contact --> DONE
 - footer --> DONE
+
+
+to do list
+// add the info card for the icons in skills
+// make sure the message will be sent to my email with js
+// fix the translation button in the nav bar
+// fix the problem in the button transitions
+// fix the menu bar in mobile version
