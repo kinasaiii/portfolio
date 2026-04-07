@@ -174,9 +174,8 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
 #refrech {
   text-decoration: none;
   font-weight: 700;
-  font-size: 18px;
-  color: var(--accent);
-  transition: color 0.4s ease;
+  font-size: 16px;
+  color: var(--accent-hover);
 }
 
 @media (max-width: 750px) {
@@ -197,6 +196,9 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   }
   #menu-toggle {
     display: block;
+  }
+  #refrech {
+    font-size: 14px;
   }
 }
 
@@ -355,7 +357,7 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
 #aboutme-paragraph {
   color: var(--text-muted);
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.9;
   margin-top: 30px;
   text-align: justify;
@@ -551,6 +553,9 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
 @media (max-width: 795px) {
   #email-placeholder, #message-placeholder {
     width: 300px;
+  }
+  .section-title {
+    font-size: 22px;
   }
 }
 
