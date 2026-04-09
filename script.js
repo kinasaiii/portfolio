@@ -67,11 +67,11 @@ function switchLang () {
         }
     });
     if (currentLang === "fr") {
-        btnCV.href = "cv-iness-ainseri-fr.pdf";
+        btnCV.href = "docs/cv-iness-ainseri-fr.pdf";
         btnCV.textContent = "Voir mon CV";
     }
     else {
-        btnCV.href = "cv-iness-ainseri-en.pdf";
+        btnCV.href = "docs/cv-iness-ainseri-en.pdf";
         btnCV.textContent = "View my CV";
     }
 
