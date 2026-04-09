@@ -146,7 +146,7 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   text-decoration: none;
   color: var(--accent);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   transition: color 0.4s ease-;
 }
 
@@ -173,12 +173,16 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
 
 #refrech {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 16px;
   color: var(--accent-hover);
 }
 
-@media (max-width: 750px) {
+.translate {
+  padding-bottom: 5px;
+}
+
+@media (max-width: 790px) {
   #nav-links {
     position: absolute;
     top: 70px;

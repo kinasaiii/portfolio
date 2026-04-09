@@ -27,20 +27,19 @@ const frenchText = {
     "project-link": "Voir Plus",
     "jeu-mot": "Jeu de Mot en C",
     "jeu-mot-desc": "Un Jeu de génération de mots en C, basé sur l’algorithmique et la résolution de problèmes, où les joueurs forment des mots à partir de lettres aléatoires validées par un dictionnaire.",
-    "portfolio": "Portfolio",
-    "portfolio-desc": "Un Portfolio personnel responsive en HTML et CSS, avec une interface moderne en mode sombre et un design épuré.",
-    "social-links": "Social Links",
-    "social-links-desc": "Une page de liens sociaux minimaliste comprenant une carte de profil et des boutons interactifs, développée avec HTML et CSS.",
-    "age-calc": "Age Calculator",
-    "age-calc-desc": "An age calculator website built with HTML, CSS and JavaScript.",
-    "contact-us": "Contact Kinasai",
-    "contact-us-desc": "A contact website built with HTML, CSS and JavaScript.",
-    "password-gen": "Password Generator",
-    "password-gen-desc": "A password generator website built with HTML, CSS and JavaScript.",
+    "kinasai-links": "Social Links",
+    "kinasai-links-desc": "Une page de liens sociaux minimaliste comprenant une carte de profil et des boutons interactifs, développée avec HTML et CSS.",
+    "pomodoro": "Kinasai Pomodoro",
+    "pomodoro-desc": "Un minuteur Pomodoro simple avec HTML, CSS et JavaScript, offrant un compte à rebours en temps réel, pause/réinitialisation et alertes sonore",
+    "ines-elegance": "Ines Élégance",
+    "ines-elegance-desc": "Une page de destination moderne de type “link-in-bio” conçue pour l’entreprise de mon ami, avec une esthétique luxueuse en marron et doré.",
+    "average-calc": "Calculateur de Moyenne",
+    "average-calc-desc": "Une application en ligne de commande en C qui calcule les moyennes des étudiants avec une logique structurée, démontrant de solides bases en C.",
     "contact-me-title": "Contacte Moi!",
     "btn-send": "Envoyer",
     "thanks-message": "Merci pour Votre message :)",
     "footer-rights": "@ 2025 KINASAI. Tous Droits Réservés.",
+
 }
 
 // original english text
@@ -75,7 +74,6 @@ function switchLang () {
         btnCV.href = "cv-iness-ainseri-en.pdf";
         btnCV.textContent = "View my CV";
     }
-    document.getElementById("lang-btn").innerText = currentLang === "en" ? "FR" : "EN";
 
     // translate "see more" buttons (class-based)
     document.querySelectorAll(".project-link").forEach(btn => {
