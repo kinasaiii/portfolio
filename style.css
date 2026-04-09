@@ -310,7 +310,7 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   #home {
     padding: 140px 10px 40px 10px;
   }
