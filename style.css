@@ -1,5 +1,6 @@
 /* the general styling for the whole webpage */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Great+Vibes&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --bg-main: #0f0f0f;
@@ -53,12 +54,15 @@ body::before {
 }
 
 .icon svg {
-  transition: transform 0.5s ease-out;
   color: var(--accent);
 }
 
-.icon:hover svg {
-  transform: scale(1.05);
+.icon-zoom {
+  transition: transform 0.5s ease;
+}
+
+.icon-zoom:hover {
+  transform: scale(1.1);
 }
 
 .icon:active svg {
@@ -68,7 +72,7 @@ body::before {
 
 .icon svg path {
   fill: var(--accent);
-  transition: all 0.3s ease-out;
+  transition: fill 0.4s ease;
 }
 
 .icon:hover svg path {
@@ -94,14 +98,13 @@ hr {
   background-color: var(--accent);
   color: var(--bg-main);
   border: 1px solid var(--accent);
-  border-radius: 7px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
   margin: 10px 0;
   text-decoration: none;
   transition:
-    transform 0.5s ease-out,
     background-color 0.3s ease-out,
     color 0.3s ease-out,
     border-color 0.5s ease-out;
@@ -111,7 +114,6 @@ hr {
   background-color: var(--bg-main);
   color: var(--accent-hover);
   border-color: var(--accent-hover);
-  transform: scale(1.05);
 }
 
 .button:active {
@@ -144,14 +146,15 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
 
 .nav-link {
   text-decoration: none;
-  color: var(--accent);
+  color: var(--text-main);
   font-weight: 500;
   font-size: 13px;
-  transition: color 0.4s ease-;
+  opacity: 90%;
+  transition: color 0.5s ease-;
 }
 
-.nav-link:hover, #refrech:hover {
-  color: var(--accent-hover);
+.nav-link:hover {
+  color: var(--accent);
 }
 
 #nav-links {
@@ -173,9 +176,10 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
 
 #refrech {
   text-decoration: none;
-  font-weight: 800;
+  font-family: capriola, sans-serif;
+  font-weight: 600;
   font-size: 16px;
-  color: var(--accent-hover);
+  color: var(--accent);
 }
 
 .translate {
@@ -259,10 +263,29 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
 }
 
 #btn-cv {
-  font-weight: 700;
-  padding: 10px 15px;
+  font-weight: 600;
+  padding: 10px 20px;
   margin-top: 25px;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+#btn-contact {
+  display: inline-block;
+  background-color: var(--bg-main);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 10px 15px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#btn-contact:hover {
+  color: var(--accent-hover);
+  border-color: var(--accent-hover);
 }
 
 #hello {
@@ -397,10 +420,6 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
 
 .icon svg:hover {
   color: var(--accent-hover);
-}
-
-.icon:hover {
-  transform: scale(1.2);
 }
 
 
