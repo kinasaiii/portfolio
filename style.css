@@ -463,6 +463,86 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   color: var(--accent-hover);
 }
 
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-tooltip {
+  position: absolute;
+  top: calc(100% + 18px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, top 0.2s ease;
+  z-index: 10;
+}
+
+.skill-tooltip::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.icon-wrapper:hover .skill-tooltip {
+  opacity: 1;
+  pointer-events: all;
+  top: calc(100% + 12px);
+}
+
+.tooltip-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.tooltip-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 15px;
+}
+
+.tooltip-desc {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.tooltip-link {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: all 0.4s ease;
+}
+
+.tooltip-link:hover {
+  border: 1px solid var(--accent-hover);
+  color: var(--accent-hover);
+}
+
 
 /* project section styling */
 /* Done */

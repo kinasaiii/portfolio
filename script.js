@@ -81,9 +81,45 @@ function switchLang () {
         btn.innerText = currentLang === "fr" ? "Voir Plus" : "See More";
     });
 
+    document.querySelectorAll(".tooltip-label").forEach(btn => {
+        btn.innerText = currentLang === "fr" ? "Langage" : "Language";
+    });
+
+    document.querySelectorAll(".tooltip-link").forEach(btn => {
+        btn.innerText = currentLang === "fr" ? "Savoir Plus →" : "Learn More →";
+    });
+
     // change placeholders (inputs & textarea)
     document.getElementById("email-placeholder").placeholder = currentLang === "fr" ? "Votre Adresse E-mail" : "Your Email";
 
     document.getElementById("message-placeholder").placeholder = currentLang === "fr" ? "Votre Message" : "Your Message";
 
 }
+
+
+// card skills to prevent disappearing when hovering on the tooltip
+document.querySelectorAll('.icon-wrapper').forEach(wrap => {
+  const tooltip = wrap.querySelector('.skill-tooltip');
+  let hideTimeout;
+
+  wrap.addEventListener('mouseenter', () => {
+    clearTimeout(hideTimeout);
+    tooltip.classList.add('active');
+  });
+
+  wrap.addEventListener('mouseleave', () => {
+    hideTimeout = setTimeout(() => {
+      tooltip.classList.remove('active');
+    }, 100);
+  });
+
+  tooltip.addEventListener('mouseenter', () => {
+    clearTimeout(hideTimeout);
+  });
+
+  tooltip.addEventListener('mouseleave', () => {
+    hideTimeout = setTimeout(() => {
+      tooltip.classList.remove('active');
+    }, 100);
+  });
+});
