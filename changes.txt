@@ -10,6 +10,5 @@ parts
 
 
 to do list
-// add the info card for the icons in skills
 // make sure the message will be sent to my email with js
-// when someone hover on the icons a small card would appear with a really small info or saying "get to now more how i knew it" with see more button and when he clicks on the icon or the see more he will go to another html page that has infos about the icon like what language is it and the it will show how i learned it and then where did i use it all and then the exemples of projects i used it in with small project cards
+// add another html pages for the icons that has infos about the icon like what language is it and the it will show how i learned it and then where did i use it all and then the exemples of projects i used it in with small project cards
