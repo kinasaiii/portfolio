@@ -569,11 +569,11 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   overflow: hidden;
   border-radius: 15px;
   text-align: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .project-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 .project-item::after {
@@ -617,20 +617,19 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   text-decoration: none;
   margin-left: 10px;
   pointer-events: auto;
-  transition: all 0.4s ease;
+  transition: color 0.4s ease;
 }
+
+.project-link:hover {
+  color: var(--accent-hover);
+  text-decoration: none;
+} 
 
 .project-link, .project-link:visited {
   color: var(--accent);
   text-decoration: none;
 }
 
-
-.project-link:hover {
-  color: var(--accent-hover);
-  text-decoration: none;
-  transform: scale(1.05);
-}
 
 /* DONE */
 /* contact section styling */
