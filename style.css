@@ -426,7 +426,7 @@ a::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::sel
   color: var(--text-muted);
   padding: 10px 20px;
   font-size: 15px;
-  line-height: 1.9;
+  line-height: 1.6;
   margin-top: 30px;
   text-align: justify;
   max-width: 1000px;
